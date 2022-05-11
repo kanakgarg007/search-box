@@ -1,6 +1,6 @@
 // api url
 const api_url =
-	"http://ec2-13-233-91-89.ap-south-1.compute.amazonaws.com:8080/search";
+	"https://ec2-13-233-91-89.ap-south-1.compute.amazonaws.com:8080/search";
 
 // Defining async function
 async function getapi(url) {
