@@ -26,25 +26,25 @@ function hideloader() {
 // Function to define innerHTML for HTML table
 function show(data) {
 	let tab =
-		`<tr>
+		'<tr>
 		<th>Id</th>
 		<th>Code</th>
 		<th>Name</th>
 		<th>Access URL</th>
-    <th>Account Type</th>
-    <th>Status Code</th>
-    <th>Source</th>
-    <th>GoLive</th>
-    <th>Bussiness Name</th>
-    <th>Bussiness Model</th>
-    <th>Industry</th>
-    <th>Created</th>
-    <th>Updated</th>
-		</tr>`;
+                <th>Account Type</th>
+                <th>Status Code</th>
+                <th>Source</th>
+                <th>GoLive</th>
+                <th>Bussiness Name</th>
+                <th>Bussiness Model</th>
+                <th>Industry</th>
+                <th>Created</th>
+                <th>Updated</th>
+		</tr>';
 	
 	// Loop to access all rows
 	for (let r of data.list) {
-		tab += `<tr>
+		tab += '<tr>
 	<td>${r.id} </td>
 	<td>${r.name}</td>
 	<td>${r.accessUrl}</td>
@@ -57,7 +57,7 @@ function show(data) {
 	<td>${r.industry}</td>
 	<td>${r.created}</td>
 	<td>${r.updated}</td>		
-</tr>`;
+</tr>';
 	}
 	// Setting innerHTML as tab variable
 	document.getElementById("employees").innerHTML = tab;
